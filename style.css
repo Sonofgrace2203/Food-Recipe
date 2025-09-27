@@ -1,8 +1,8 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: ;
+    font: 1em sans-serif;
 }
 
 html {
@@ -356,7 +356,7 @@ p {
 @media (max-width: 800px) {
     p {
         width: 40rem;
-        font-size: ;
+        font-size: 0;
     }
 }
 
@@ -367,7 +367,7 @@ p {
     }
 }
 
-.hero-section-arrow {
+hero-section-arrow {
     width: 30rem;
     background: var(--primary-color);
     border-radius: 3rem;
@@ -454,6 +454,7 @@ b {
 
 h4 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 h5 {
@@ -542,6 +543,7 @@ img {
 
 h6 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 sub {
@@ -551,6 +553,7 @@ sub {
     width: 30rem;
     margin-top: -2rem;
 }
+
 
 
 
@@ -680,7 +683,7 @@ sub {
     color: var(--neutral-color);
     font-size: 1.5rem;
     width: 10rem;
-    padding: rem 1rem 0.1rem;
+    padding: 1rem 1rem 1rem;
     text-align: center;
     text-decoration: none;
     border-radius: 2rem;
@@ -694,6 +697,10 @@ u {
 .blog-content {
     text-align: left;
     line-height: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3.3rem;
 }
 
 .q {
