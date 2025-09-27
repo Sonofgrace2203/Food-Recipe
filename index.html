@@ -13,7 +13,7 @@
              <!-- this is the header -->
               <div>
                 <header>
-                    <h1>Food Recipe</h1>
+                    <a href="index.html" class="food-home"><h1>Food Recipe</h1></a>
                     <nav>
                         <ul>
                             <li>
@@ -317,7 +317,7 @@
 
                <aside id="aside-nav" class="d-hide">
                     <nav class="aside-nav">
-                        <div class="aside-nav-cancel-toggle">
+                        <div id="cancel-icon" class="aside-nav-cancel-toggle">
                             <i class="mdi mdi-cancel" id="aside-nav-cancel"></i>
                         </div>
                         <ul class="aside-ul">
@@ -350,28 +350,15 @@
             var asideNav = document.getElementById("aside-nav");
 
             function popUp() {
-                asideNav.classList.remove{"d-hide"};
+                asideNav.classList.remove("d-hide");
             }
 
             menuIcon.addEventListener("click", popUp);
 
-            var cancelICO
-
-
-
-            var menuIcon = document.getElementById("menu-icon");
-            var sideNav = document.getElementById("side-nav");
-
-            function showNav(){
-                sideNav.classList.remove("d-hide");
-            }
-
-            menuIcon.addEventListener("click", showNav);
-
             var cancelIcon = document.getElementById("cancel-icon")
 
             function hideNav(){
-                sideNav.classList.add("d-hide")
+                asideNav.classList.add("d-hide")
             }
             cancelIcon.addEventListener("click", hideNav)
         </script>
