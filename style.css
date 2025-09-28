@@ -69,6 +69,16 @@ h1 {
     font-size: 4rem;
 }
 
+@media (min-width: 900px) and (max-width: 1280px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+#p {
+    width: 30rem;
+}
+
 .food-home {
     color: var(--primary-color);
 }
@@ -83,6 +93,12 @@ h1 {
     }
 }
 
+@media (max-width: 300px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 nav {
     display: flex;
     gap: 10rem;
@@ -91,7 +107,7 @@ nav {
     font-size: 2rem;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
     nav {
         display: none;
     }
@@ -105,7 +121,7 @@ ul {
 }
 
 li {
-    
+
 }
 
 a {
@@ -163,6 +179,12 @@ button {
     color: white;
 }
 
+@media (max-width: 1150px) {
+    button {
+    font-size: 1.6rem;
+}
+}
+
 .mobile-menu {
     font-size: 4rem;
     display: none;
@@ -197,7 +219,7 @@ button {
 
 .search-recipe {
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     display: flex;
     gap: 2rem;
 }
@@ -238,11 +260,12 @@ button {
     padding: 1.1rem;
 }
 
-/* @media (min-width:1020px) and (max-width: 1280px) {
+@media (min-width:1020px) and (max-width: 1280px) {
     .hero-section-container {
-        
+        margin-top: 13rem;
+        width: 60rem;
     }
-} */
+}
 
 @media (max-width: 800px) {
     .hero-section-container {
@@ -297,7 +320,7 @@ strong {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--primary-color);
     width: 50rem;
     text-align: center;
@@ -306,37 +329,38 @@ h2 {
 
 @media (min-width:1020px) and (max-width: 1280px) {
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 800px) {
     h2 {
         width: 40rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 500px) {
     h2 {
         width: 20rem;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 #b2 {
     color: var(--neutral-color);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 @media (min-width:1020px) and (max-width: 1280px) {
     #b2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 600px) {
     #b2 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
@@ -356,7 +380,7 @@ p {
 @media (max-width: 800px) {
     p {
         width: 40rem;
-        font-size: 0;
+        font-size: 1.9rem;
     }
 }
 
@@ -367,7 +391,7 @@ p {
     }
 }
 
-hero-section-arrow {
+.hero-section-arrow {
     width: 30rem;
     background: var(--primary-color);
     border-radius: 3rem;
@@ -407,11 +431,16 @@ h3 {
     display: block;
 }
 
+@media (max-width: 500px) {
+    h3 {
+        font-size: 2.5rem;
+        display: block;
+    }
+}
+
 b {
     color: var(--primary-color);
 }
-
-
 
 .shop-recipes {
     display: flex;
@@ -610,6 +639,7 @@ sub {
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .blogs {
@@ -797,6 +827,13 @@ u {
     padding: 0rem 10rem;
 }
 
+@media (max-width: 600px) {
+    #h4 {
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+}
+
 .sub-mail {
     display: flex;
     gap: 15rem;
@@ -809,7 +846,7 @@ u {
     .sub-mail {
         gap: 1rem;
         width: 50rem;
-        padding: 2rem;
+        padding: 2rem 1rem;
     }
 }
 
@@ -837,7 +874,7 @@ input {
 
 .sub-terms {
     display: flex;
-    gap: 2re;
+    gap: 3rem;
 }
 
 .checkbox {
@@ -1052,4 +1089,21 @@ aside {
 
 #aside-icon {
     font-size: 3rem;
+}
+
+
+/* this is the food recipe page */
+.main {
+    margin-top: 18rem;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+#search-box {
+    margin-top: 2rem;
+    border: 3px solid var(--primary-color);
+    padding: 1rem 3rem;
 }
