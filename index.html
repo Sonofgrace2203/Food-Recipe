@@ -1,340 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NaijaKitchen - Nigerian Food Recipes</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
-        <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="body">
-             <!-- this is the header -->
-                <div>
-                    <header>
-                        <div>
-                            <h1>NijaKitchen</h1>
-                            <p id="p" style="color: black;">Nigerian Food Recipes</p>
-                        </div>
-                        <nav>  
-                            <ul>
-                                <a href="index.html"><li>Home</li></a>
-                                <a href="food.html"><li>Food</li></a>
-                                <a href="recipe.html"><li>Recipe</li></a>
-                                <a href="project report.html"><li>Project Report</li></a>
-                                <li>
-                                    <select name="" id="">
-                                        <option value="Recipe">Ingredients</option>
-                                        <option value="Recipe">Flavour</option>
-                                    </select>
-                                </li>
-                            </ul>
-                            <span>
-                                <button>Subscribe</button>
-                            </span>
-                        </nav>
 
-                        <div id="mobile-menu" class="mobile-menu">
-                            <i class="mdi mdi-menu"></i>
-                        </div>
-                    </header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaKitchen - Nigerian Food Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
+    <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <!-- this is the header -->
+        <div>
+            <header>
+                <div>
+                    <h1>NijaKitchen</h1>
+                    <p id="p" style="color: black;">Nigerian Food Recipes</p>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="food.html">
+                            <li>Food</li>
+                        </a>
+                        <a href="recipe.html">
+                            <li>Recipe</li>
+                        </a>
+                        <a href="project report.html">
+                            <li>Project Report</li>
+                        </a>
+                        <li>
+                            <select name="" id="">
+                                <option value="Recipe">Ingredients</option>
+                                <option value="Recipe">Flavour</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <span>
+                        <button>Subscribe</button>
+                    </span>
+                </nav>
+
+                <div id="mobile-menu" class="mobile-menu">
+                    <i class="mdi mdi-menu"></i>
                 </div>
 
-               <!-- this is the main page -->
-               <main>
-
-                    <!-- this is the hero section -->
-                    <section class="hero-section">
-                        <div class="search-recipe">
-                            <input type="text" placeholder="search your favourite recipe here" id="search-recipe">
-                            <div class="recipe-search-icon">
-                                <i id="recipe-search" class="mdi mdi-tag-search"></i>
-                            </div>
-                        </div>
-                        <div class="hero-section-container">
-                            <div class="hero-section-sub-container">
-                                <div class="section-ttle-icon">
-                                    <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                                </div>
-                               <h2> <b id="b2">Delicious Nigerian Dishes</b> for Food Lovers</h2>
-                                <p>From Jollof Rice to Egusi Soup, Suya to Puff-Puff — discover recipes that bring Naija taste right into your kitchen.</p>
-                                <div class="hero-section-arrow">
-                                    <em class="mdi mdi-arrow-right"></em>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- this is the second section -->
-                    <section>
-                        <div class="check-shop">
-                            <div class="section-ttle-icon">
-                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                            </div>
-                            <h3>Check Our <b>food</b></h3>
-                            <div class="shop-recipes">
-                                <div class="recipe-shop">
-                                    <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
-                                    <h4>Jollof Rice</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
-                                    <h4>Egusi Soup</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
-                                    <h4>Suya</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
-                                    <h4>Moi Moi</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
-                                    <h4>Puff-Puff</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
-                                    <h4>Efo Riro</h4>
-                                </div>
-                            </div>
-                            <h5><a href="index.html"><sup>Check more here</sup></a></h5>
-                        </div>
-                    </section>
-
-                    <!-- this is the third section  -->
-                  <section>
-                        <div class="trendy-section">
-                           <div class="section-ttle-icon">
-                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                            </div>
-                            <h3>Trendy <b>Recipes</b></h3>
-                            <div class="recipe-trendy">
-                                <div class="trendy-recipe">
-                                    <img src="Images1/Akara1.jpeg" alt="Akara">
-                                    <h6>Akara (Bean Cakes)</h6>
-                                    <sub>Ingredients: Beans, pepper, onions, palm oil.</sub>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/ofada rice2.jpeg" alt="Ofada Rice & Sauce">
-                                    <h6>Ofada Rice & Sauce</h6>
-                                    <sub>Ingredients: Ofada rice, palm oil, assorted meat, pepper mix.</sub>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/Nsala soup1.jpeg" alt="Nsala Soup">
-                                    <h6>Nsala Soup</h6>
-                                    <sub>Ingredients: Catfish, yam, uziza, crayfish.</sub>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/ogbono soup2.jpeg" alt="Ogbono Soup">
-                                    <h6>Ogbono Soup</h6>
-                                    <sub>Ingredients: Ogbono seeds, meat, stockfish, palm oil.</sub>
-                                </div>
-                            </div>
-                            <h5><a href="index.html"><sup>Check more here</sup></a></h5>
-                        </div>
-                    </section>
-
-
-                    <!-- this is the fourth section  -->
-                    <section>
-                        <div class="recipe-blogs">
-                            <div class="trend-recipe">
-                                <div class="recipe-blog-head">
-                                    <div class="section-ttle-icon">
-                                        <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                                    </div>
-                                    <div class="trendy">
-                                        <h3>Latest from <b>NijaKitchen</b></h3>
-                                        <span>
-                                            <button>View More</button>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="blogs">
-                                    <div class="main-blogs">
-                                        <div class="blog-main-img-container">
-                                            <img src="images/images.jpg" alt="" class="blog-main-img">
-                                        </div>
-                                        <div class="blog-content">
-                                            <sub>September 27, 2025</sub>
-                                            <h4>NijaKitchen Food Blog</h4>
-                                            <q class="q q1">Discover authentic Nigerian recipes, modern twists, and kitchen secrets 
-                                            that bring people together. From spicy stews to tasty small chops, 
-                                            NijaKitchen is your home of flavorful inspiration.
-                                            </q>
-                                        </div>
-                                    </div>
-                                    <div class="sub-blogs-super">
-                                        <div class="sub-blogs">
-                                            <img src="images/download.jpg" alt="" class="sub-blog-img">
-                                            <div class="blog-content">
-                                                <sub>September 27, 2025</sub>
-                                                <div class="blog-user">
-                                                    <u>Subscribe</u>
-                                                </div>
-                                                <h4>Quick Bites by NijaKitchen</h4>
-                                                <q class="q">Learn easy, tasty recipes you can whip up in minutes with fresh 
-                                                    Nigerian ingredients.
-                                                </q>
-                                            </div>
-                                        </div>
-                                        <div class="sub-blogs">
-                                            <img src="images/image.webp" alt="" class="sub-blog-img">
-                                            <div class="blog-content">
-                                                <sub>September 27, 2025</sub>
-                                                <div class="blog-user">
-                                                    <u>Subscribe</u>
-                                                </div>
-                                                <h4>NijaKitchen Cooking Tips</h4>
-                                                <q class="q">Smart tricks for perfecting your cooking—from suya spice mix 
-                                                    to jollof rice secrets.
-                                                </q>
-                                            </div>
-                                        </div>
-                                        <div class="sub-blogs">
-                                            <img src="images/image3.jpg" alt="" class="sub-blog-img">
-                                            <div class="blog-content">
-                                                <sub>September 27, 2025</sub>
-                                                <div class="blog-user">
-                                                    <u>Subscribe</u>
-                                                </div>
-                                                <h4>Inside NijaKitchen</h4>
-                                                <q class="q">Behind the scenes: stories, culture, and flavors that make 
-                                                    Nigerian cuisine unique.
-                                                </q>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- this is the third section  -->
-                    <section class="gallery-section">
-                        <div class="gallery-sub-section">
-                            <div class="section-ttle-icon">
-                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                            </div>
-                            <h3><b>NijaKitchen</b> Gallery</h3>
-                            <div class="recipe-trendy">
-                                <div class="trendy-recipe">
-                                    <img src="Images1/smoky jollofrice.jpeg" alt="">
-                                    <h6>Smoky Jollof Rice</h6>
-                                    <sub>Ingredients: Long-grain rice, fresh tomatoes, peppers, onions, and rich spices.</sub>
-                                    <div class="gallery-tag">
-                                        <u>Subscribe</u>
-                                    </div>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/suya sweres.jpeg" alt="">
-                                    <h6>Spicy Suya Skewers</h6>
-                                    <sub>Ingredients: Beef, suya spice mix, groundnut powder, and chili pepper.</sub>
-                                    <div class="gallery-tag">
-                                        <u>Subscribe</u>
-                                    </div>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/Egusi 2.jpeg" alt="">
-                                    <h6>Egusi Soup</h6>
-                                    <sub>Ingredients: Melon seeds, spinach, palm oil, assorted meat, and crayfish.</sub>
-                                    <div class="gallery-tag">
-                                        <u>Subscribe</u>
-                                    </div>
-                                </div>
-                                <div class="trendy-recipe">
-                                    <img src="Images1/pepper soup2.jpeg" alt="">
-                                    <h6>Pepper Soup</h6>
-                                    <sub>Ingredients: Catfish or goat meat, hot peppers, scent leaves, and local spices.</sub>
-                                    <div class="gallery-tag">
-                                        <u>Subscribe</u>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><a href="index.html"><sup>See more delicious dishes</sup></a></h5>
-                        </div>
-                    </section>
-
-                    <!-- this is the subscription section -->
-                    <section>
-                        <div class="subscription-section">
-                            <div class="subscription-title-wrapper">
-                                <div class="section-ttle-icon">
-                                    <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                                </div>
-                                <h3><b>Join the Flavor</b> with NijaKitchen!</h3>
-                                <h4 id="h4">Stay inspired with authentic Nigerian recipes, cooking tips, and tasty updates 
-                                    delivered straight to your inbox. Be the first to know what’s cooking at NijaKitchen.
-                                </h4>
-                            </div>
-                            <div>
-                                <div class="sub-mail">
-                                    <input type="email" placeholder="Enter your email">
-                                    <span id="span">
-                                        <button>Subscribe Now</button>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="sub-terms">
-                                <input type="checkbox" class="checkbox">
-                                <p>By subscribing, you agree to receive delicious recipe updates from NijaKitchen.</p>
-                            </div>
-
-                            <img src="images/recipes-icon-2.png" alt="" class="sub-img">
-                            <img src="images/recipes-icon-2.png" alt="" class="sub-img1">
-                        </div>
-                    </section>
-
-                    <!-- this is the footer section -->
-                    <footer>
-                    <div class="footer">
-                        <div class="footer-title-wrapper">
-                            <b id="b-footer">NijaKitchen</b>
-                            <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern twists, 
-                                made to inspire your kitchen every day.
-                            </h4>
-                            <div class="footer-icon">
-                                <i id="footer-icon" class="mdi mdi-facebook"></i>
-                                <i id="footer-icon" class="mdi mdi-linkedin"></i>
-                                <i id="footer-icon" class="mdi mdi-twitter"></i>
-                                <i id="footer-icon" class="mdi mdi-instagram"></i>
-                            </div>
-                        </div>
-
-                        <div class="f-nav">
-                            <nav class="footer-nav">
-                                <ul>
-                                    <a class="ul-footer" href="index.html"><li>Recipes</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Cooking Tips</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Local Delights</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Shop Ingredients</li></a>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer-copyright">
-                            <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
-                            <div class="terms-policy-footer">
-                                <a class="ul-footer" href="index.html">Terms & Conditions</a>
-                                <a class="ul-footer" href="index.html">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-               </main>
-
-               <aside id="aside-nav" class="d-hide">
+                <aside id="aside-nav" class="d-hide">
                     <nav class="aside-nav">
                         <div id="cancel-icon" class="aside-nav-cancel-toggle">
                             <i class="mdi mdi-cancel" id="aside-nav-cancel"></i>
                         </div>
                         <ul class="aside-ul">
-                            <a href="index.html" id="aside-a"><li>Home</li></a>
-                            <a href="food.html" id="aside-a"><li>Food</li></a>
-                            <a href="recipe.html" id="aside-a"><li>Recipe</li></a>
-                            <a href="project report.html" id="aside-a"><li>Project Report</li></a>
+                            <a href="index.html" id="aside-a">
+                                <li>Home</li>
+                            </a>
+                            <a href="food.html" id="aside-a">
+                                <li>Food</li>
+                            </a>
+                            <a href="recipe.html" id="aside-a">
+                                <li>Recipe</li>
+                            </a>
+                            <a href="project report.html" id="aside-a">
+                                <li>Project Report</li>
+                            </a>
                             <li>
                                 <select name="" id="" id="aside-a" class="select-aside">
                                     <option value="Recipe">Ingredients</option>
@@ -352,27 +86,301 @@
                             <i id="aside-icon" class="mdi mdi-instagram"></i>
                         </div>
                     </nav>
-               </aside>
+                </aside>
+
+            </header>
         </div>
 
-        <script>
-            var menuIcon = document.getElementById("mobile-menu");
-            var asideNav = document.getElementById("aside-nav");
+        <!-- this is the main page -->
+        <main>
 
-            function popUp() {
-                asideNav.classList.remove("d-hide");
-            }
+            <!-- this is the hero section -->
+            <section class="hero-section">
+                <div class="hero-section-container">
+                    <div class="hero-section-sub-container">
+                        <div class="section-ttle-icon">
+                            <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                        </div>
+                        <h2> <b id="b2">Delicious Nigerian Dishes</b> for Food Lovers</h2>
+                        <p>From Jollof Rice to Egusi Soup, Suya to Puff-Puff — discover recipes that bring Naija taste
+                            right into your kitchen.</p>
+                        <div class="hero-section-arrow">
+                            <em class="mdi mdi-arrow-right"></em>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            menuIcon.addEventListener("click", popUp);
+            <!-- this is the second section -->
+            <section>
+                <div class="check-shop">
+                    <div class="section-ttle-icon">
+                        <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                    </div>
+                    <h3>Check Our <b>food</b></h3>
+                    <div class="shop-recipes">
+                        <div class="recipe-shop">
+                            <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
+                            <h4>Jollof Rice</h4>
+                        </div>
+                        <div class="recipe-shop">
+                            <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
+                            <h4>Egusi Soup</h4>
+                        </div>
+                        <div class="recipe-shop">
+                            <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
+                            <h4>Suya</h4>
+                        </div>
+                        <div class="recipe-shop">
+                            <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
+                            <h4>Moi Moi</h4>
+                        </div>
+                        <div class="recipe-shop">
+                            <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
+                            <h4>Puff-Puff</h4>
+                        </div>
+                        <div class="recipe-shop">
+                            <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
+                            <h4>Efo Riro</h4>
+                        </div>
+                    </div>
+                    <h5><a href="food.html"><sup>Check more here</sup></a></h5>
+                </div>
+            </section>
 
-            var cancelIcon = document.getElementById("cancel-icon");
+            <!-- this is the third section  -->
+            <section>
+                <div class="trendy-section">
+                    <div class="section-ttle-icon">
+                        <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                    </div>
+                    <h3>Trendy <b>Recipes</b></h3>
+                    <div class="recipe-trendy">
+                        <div class="trendy-recipe">
+                            <img src="Images1/Akara1.jpeg" alt="Akara">
+                            <h6>Akara (Bean Cakes)</h6>
+                            <sub>Ingredients: Beans, pepper, onions, palm oil.</sub>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/ofada rice2.jpeg" alt="Ofada Rice & Sauce">
+                            <h6>Ofada Rice & Sauce</h6>
+                            <sub>Ingredients: Ofada rice, palm oil, assorted meat, pepper mix.</sub>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/Nsala soup1.jpeg" alt="Nsala Soup">
+                            <h6>Nsala Soup</h6>
+                            <sub>Ingredients: Catfish, yam, uziza, crayfish.</sub>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/ogbono soup2.jpeg" alt="Ogbono Soup">
+                            <h6>Ogbono Soup</h6>
+                            <sub>Ingredients: Ogbono seeds, meat, stockfish, palm oil.</sub>
+                        </div>
+                    </div>
+                    <h5><a href="recipe.html"><sup>Check more here</sup></a></h5>
+                </div>
+            </section>
 
-            function hideNav() {
-                asideNav.classList.add("d-hide");
-            }
-            
-            cancelIcon.addEventListener("click", hideNav);
 
-        </script>
-    </body>
+            <!-- this is the fourth section  -->
+            <section>
+                <div class="recipe-blogs">
+                    <div class="trend-recipe">
+                        <div class="recipe-blog-head">
+                            <div class="section-ttle-icon">
+                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                            </div>
+                            <div class="trendy">
+                                <h3>Latest from <b>NijaKitchen</b></h3>
+                                <span>
+                                    <button>View More</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="blogs">
+                            <div class="main-blogs">
+                                <div class="blog-main-img-container">
+                                    <img src="images/images.jpg" alt="" class="blog-main-img">
+                                </div>
+                                <div class="blog-content">
+                                    <sub>September 27, 2025</sub>
+                                    <h4>NijaKitchen Food Blog</h4>
+                                    <q class="q q1">Discover authentic Nigerian recipes, modern twists, and kitchen
+                                        secrets
+                                        that bring people together. From spicy stews to tasty small chops,
+                                        NijaKitchen is your home of flavorful inspiration.
+                                    </q>
+                                </div>
+                            </div>
+                            <div class="sub-blogs-super">
+                                <div class="sub-blogs">
+                                    <img src="images/download.jpg" alt="" class="sub-blog-img">
+                                    <div class="blog-content">
+                                        <sub>September 27, 2025</sub>
+                                        <div class="blog-user">
+                                            <u>Subscribe</u>
+                                        </div>
+                                        <h4>Quick Bites by NijaKitchen</h4>
+                                        <q class="q">Learn easy, tasty recipes you can whip up in minutes with fresh
+                                            Nigerian ingredients.
+                                        </q>
+                                    </div>
+                                </div>
+                                <div class="sub-blogs">
+                                    <img src="images/image.webp" alt="" class="sub-blog-img">
+                                    <div class="blog-content">
+                                        <sub>September 27, 2025</sub>
+                                        <div class="blog-user">
+                                            <u>Subscribe</u>
+                                        </div>
+                                        <h4>NijaKitchen Cooking Tips</h4>
+                                        <q class="q">Smart tricks for perfecting your cooking—from suya spice mix
+                                            to jollof rice secrets.
+                                        </q>
+                                    </div>
+                                </div>
+                                <div class="sub-blogs">
+                                    <img src="images/image3.jpg" alt="" class="sub-blog-img">
+                                    <div class="blog-content">
+                                        <sub>September 27, 2025</sub>
+                                        <div class="blog-user">
+                                            <u>Subscribe</u>
+                                        </div>
+                                        <h4>Inside NijaKitchen</h4>
+                                        <q class="q">Behind the scenes: stories, culture, and flavors that make
+                                            Nigerian cuisine unique.
+                                        </q>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- this is the third section  -->
+            <section class="gallery-section">
+                <div class="gallery-sub-section">
+                    <div class="section-ttle-icon">
+                        <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                    </div>
+                    <h3><b>NijaKitchen</b> Gallery</h3>
+                    <div class="recipe-trendy">
+                        <div class="trendy-recipe">
+                            <img src="Images1/smoky jollofrice.jpeg" alt="">
+                            <h6>Smoky Jollof Rice</h6>
+                            <sub>Ingredients: Long-grain rice, fresh tomatoes, peppers, onions, and rich spices.</sub>
+                            <div class="gallery-tag">
+                                <u>Subscribe</u>
+                            </div>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/suya sweres.jpeg" alt="">
+                            <h6>Spicy Suya Skewers</h6>
+                            <sub>Ingredients: Beef, suya spice mix, groundnut powder, and chili pepper.</sub>
+                            <div class="gallery-tag">
+                                <u>Subscribe</u>
+                            </div>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/Egusi 2.jpeg" alt="">
+                            <h6>Egusi Soup</h6>
+                            <sub>Ingredients: Melon seeds, spinach, palm oil, assorted meat, and crayfish.</sub>
+                            <div class="gallery-tag">
+                                <u>Subscribe</u>
+                            </div>
+                        </div>
+                        <div class="trendy-recipe">
+                            <img src="Images1/pepper soup2.jpeg" alt="">
+                            <h6>Pepper Soup</h6>
+                            <sub>Ingredients: Catfish or goat meat, hot peppers, scent leaves, and local spices.</sub>
+                            <div class="gallery-tag">
+                                <u>Subscribe</u>
+                            </div>
+                        </div>
+                    </div>
+                    <h5><a href="recipe.html"><sup>See more delicious dishes</sup></a></h5>
+                </div>
+            </section>
+
+            <!-- this is the subscription section -->
+            <section>
+                <div class="subscription-section">
+                    <div class="subscription-title-wrapper">
+                        <div class="section-ttle-icon">
+                            <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                        </div>
+                        <h3><b>Join the Flavor</b> with NijaKitchen!</h3>
+                        <h4 id="h4">Stay inspired with authentic Nigerian recipes, cooking tips, and tasty updates
+                            delivered straight to your inbox. Be the first to know what’s cooking at NijaKitchen.
+                        </h4>
+                    </div>
+                    <div>
+                        <div class="sub-mail">
+                            <input type="email" placeholder="Enter your email">
+                            <span id="span">
+                                <button>Subscribe Now</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sub-terms">
+                        <input type="checkbox" class="checkbox">
+                        <p>By subscribing, you agree to receive delicious recipe updates from NijaKitchen.</p>
+                    </div>
+
+                    <img src="images/recipes-icon-2.png" alt="" class="sub-img">
+                    <img src="images/recipes-icon-2.png" alt="" class="sub-img1">
+                </div>
+            </section>
+
+            <!-- this is the footer section -->
+            <footer>
+                <div class="footer">
+                    <div class="footer-title-wrapper">
+                        <b id="b-footer">NijaKitchen</b>
+                        <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern twists,
+                            made to inspire your kitchen every day.
+                        </h4>
+                        <div class="footer-icon">
+                            <i id="footer-icon" class="mdi mdi-facebook"></i>
+                            <i id="footer-icon" class="mdi mdi-linkedin"></i>
+                            <i id="footer-icon" class="mdi mdi-twitter"></i>
+                            <i id="footer-icon" class="mdi mdi-instagram"></i>
+                        </div>
+                    </div>
+
+                    <div class="f-nav">
+                        <nav class="footer-nav">
+                            <ul>
+                                <a class="ul-footer" href="index.html">
+                                    <li>Recipes</li>
+                                </a>
+                                <a class="ul-footer" href="index.html">
+                                    <li>Cooking Tips</li>
+                                </a>
+                                <a class="ul-footer" href="index.html">
+                                    <li>Local Delights</li>
+                                </a>
+                                <a class="ul-footer" href="index.html">
+                                    <li>Shop Ingredients</li>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-copyright">
+                        <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
+                        <div class="terms-policy-footer">
+                            <a class="ul-footer" href="index.html">Terms & Conditions</a>
+                            <a class="ul-footer" href="index.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

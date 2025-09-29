@@ -1,178 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NaijaKitchen - Nigerian Food Recipes</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
-        <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaKitchen - Nigerian Food Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
+    <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="script.js">
+</head>
+
+<body>
+    <div>
+        <!-- this is the header -->
         <div>
-            <!-- this is the header -->
-              <div>
-                <header>
-                    <div>
-                        <h1>NijaKitchen</h1>
-                        <p id="p" style="color: black;">Nigerian Food Recipes</p>
-                    </div>
-                    <nav>  
-                        <ul>
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="food.html"><li>Food</li></a>
-                            <a href="recipe.html"><li>Recipe</li></a>
-                            <a href="project report.html"><li>Project Report</li></a>
-                            <li>
-                                <select name="" id="">
-                                    <option value="Recipe">Ingredients</option>
-                                    <option value="Recipe">Flavour</option>
-                                </select>
-                            </li>
-                        </ul>
-                        <span>
-                            <button>Subscribe</button>
-                        </span>
-                        </nav>
+            <header>
+                <div>
+                    <h1>NijaKitchen</h1>
+                    <p id="p" style="color: black;">Nigerian Food Recipes</p>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="food.html">
+                            <li>Food</li>
+                        </a>
+                        <a href="recipe.html">
+                            <li>Recipe</li>
+                        </a>
+                        <a href="project report.html">
+                            <li>Project Report</li>
+                        </a>
+                        <li>
+                            <select name="" id="">
+                                <option value="Recipe">Ingredients</option>
+                                <option value="Recipe">Flavour</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <span>
+                        <button>Subscribe</button>
+                    </span>
+                </nav>
 
-                    <div id="mobile-menu" class="mobile-menu">
-                        <i class="mdi mdi-menu"></i>
-                    </div>
-                </header>
-
-                <!-- this is the main food list page -->
-                <main class="main">
-
-                    <!-- <div class="search-box">
-                        <div class="search-recipe" id="search-box">
-                            <input type="text" placeholder="search your favourite recipe here" id="search-recipe">
-                            <div class="recipe-search-icon">
-                                <i id="recipe-search" class="mdi mdi-tag-search"></i>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <section>
-                        <div class="trendy-section">
-                           <div class="section-ttle-icon">
-                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                            </div>
-                            <h3>Check Our <b>Food</b></h3>
-                            <div class="recipe-trendy">
-                                <div class="recipe-shop">
-                                    <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
-                                    <h4>Jollof Rice</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
-                                    <h4>Egusi Soup</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
-                                    <h4>Suya</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
-                                    <h4>Moi Moi</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
-                                    <h4>Puff-Puff</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
-                                    <h4>Efo Riro</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
-                                    <h4>Jollof Rice</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
-                                    <h4>Egusi Soup</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
-                                    <h4>Suya</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
-                                    <h4>Moi Moi</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
-                                    <h4>Puff-Puff</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
-                                    <h4>Efo Riro</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
-                                    <h4>Jollof Rice</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
-                                    <h4>Egusi Soup</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
-                                    <h4>Suya</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
-                                    <h4>Moi Moi</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
-                                    <h4>Puff-Puff</h4>
-                                </div>
-                                <div class="recipe-shop">
-                                    <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
-                                    <h4>Efo Riro</h4>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- this is the footer section -->
-                    <footer>
-                    <div class="footer">
-                        <div class="footer-title-wrapper">
-                            <b id="b-footer">NijaKitchen</b>
-                            <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern twists, 
-                                made to inspire your kitchen every day.
-                            </h4>
-                            <div class="footer-icon">
-                                <i id="footer-icon" class="mdi mdi-facebook"></i>
-                                <i id="footer-icon" class="mdi mdi-linkedin"></i>
-                                <i id="footer-icon" class="mdi mdi-twitter"></i>
-                                <i id="footer-icon" class="mdi mdi-instagram"></i>
-                            </div>
-                        </div>
-
-                        <div class="f-nav">
-                            <nav class="footer-nav">
-                                <ul>
-                                    <a class="ul-footer" href="index.html"><li>Recipes</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Cooking Tips</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Local Delights</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Shop Ingredients</li></a>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer-copyright">
-                            <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
-                            <div class="terms-policy-footer">
-                                <a class="ul-footer" href="index.html">Terms & Conditions</a>
-                                <a class="ul-footer" href="index.html">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                </main>
+                <div id="mobile-menu" class="mobile-menu">
+                    <i class="mdi mdi-menu"></i>
+                </div>
 
                 <aside id="aside-nav" class="d-hide">
                     <nav class="aside-nav">
@@ -180,10 +58,18 @@
                             <i class="mdi mdi-cancel" id="aside-nav-cancel"></i>
                         </div>
                         <ul class="aside-ul">
-                            <a href="index.html" id="aside-a"><li>Home</li></a>
-                            <a href="food.html" id="aside-a"><li>Food</li></a>
-                            <a href="recipe.html" id="aside-a"><li>Recipe</li></a>
-                            <a href="project report.html" id="aside-a"><li>Project Report</li></a>
+                            <a href="index.html" id="aside-a">
+                                <li>Home</li>
+                            </a>
+                            <a href="food.html" id="aside-a">
+                                <li>Food</li>
+                            </a>
+                            <a href="recipe.html" id="aside-a">
+                                <li>Recipe</li>
+                            </a>
+                            <a href="project report.html" id="aside-a">
+                                <li>Project Report</li>
+                            </a>
                             <li>
                                 <select name="" id="" id="aside-a" class="select-aside">
                                     <option value="Recipe">Ingredients</option>
@@ -201,87 +87,154 @@
                             <i id="aside-icon" class="mdi mdi-instagram"></i>
                         </div>
                     </nav>
-               </aside>
-            </div>
+                </aside>
+            </header>
+
+            <!-- this is the main food list page -->
+            <main class="main">
+
+                <!-- <div class="search-box">
+                        <div class="search-recipe" id="search-box">
+                            <input type="text" placeholder="search your favourite recipe here" id="search-recipe">
+                            <div class="recipe-search-icon">
+                                <i id="recipe-search" class="mdi mdi-tag-search"></i>
+                            </div>
+                        </div>
+                    </div> -->
+
+                <section>
+                    <div class="trendy-section">
+                        <div class="section-ttle-icon">
+                            <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                        </div>
+                        <h3>Check Our <b>Food</b></h3>
+                        <div class="recipe-trendy">
+                            <div class="recipe-shop">
+                                <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
+                                <h4>Jollof Rice</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
+                                <h4>Egusi Soup</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
+                                <h4>Suya</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
+                                <h4>Moi Moi</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
+                                <h4>Puff-Puff</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
+                                <h4>Efo Riro</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
+                                <h4>Jollof Rice</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
+                                <h4>Egusi Soup</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
+                                <h4>Suya</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
+                                <h4>Moi Moi</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
+                                <h4>Puff-Puff</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
+                                <h4>Efo Riro</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/jollof rice1.jpeg" alt="Jollof Rice" class="recipe-img">
+                                <h4>Jollof Rice</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Egusi 1.jpeg" alt="Egusi Soup" class="recipe-img">
+                                <h4>Egusi Soup</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/suya2.jpeg" alt="Suya" class="recipe-img">
+                                <h4>Suya</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/moi-moi2.jpeg" alt="Moi Moi" class="recipe-img">
+                                <h4>Moi Moi</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/puff-puff2.jpeg" alt="Puff Puff" class="recipe-img">
+                                <h4>Puff-Puff</h4>
+                            </div>
+                            <div class="recipe-shop">
+                                <img src="Images1/Efo-riro1.jpeg" alt="Efo Riro" class="recipe-img">
+                                <h4>Efo Riro</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- this is the footer section -->
+                <footer>
+                    <div class="footer">
+                        <div class="footer-title-wrapper">
+                            <b id="b-footer">NijaKitchen</b>
+                            <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern
+                                twists,
+                                made to inspire your kitchen every day.
+                            </h4>
+                            <div class="footer-icon">
+                                <i id="footer-icon" class="mdi mdi-facebook"></i>
+                                <i id="footer-icon" class="mdi mdi-linkedin"></i>
+                                <i id="footer-icon" class="mdi mdi-twitter"></i>
+                                <i id="footer-icon" class="mdi mdi-instagram"></i>
+                            </div>
+                        </div>
+
+                        <div class="f-nav">
+                            <nav class="footer-nav">
+                                <ul>
+                                    <a class="ul-footer" href="index.html">
+                                        <li>Recipes</li>
+                                    </a>
+                                    <a class="ul-footer" href="index.html">
+                                        <li>Cooking Tips</li>
+                                    </a>
+                                    <a class="ul-footer" href="index.html">
+                                        <li>Local Delights</li>
+                                    </a>
+                                    <a class="ul-footer" href="index.html">
+                                        <li>Shop Ingredients</li>
+                                    </a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-copyright">
+                            <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
+                            <div class="terms-policy-footer">
+                                <a class="ul-footer" href="index.html">Terms & Conditions</a>
+                                <a class="ul-footer" href="index.html">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </main>
         </div>
+    </div>
 
-        <script>
-            var menuIcon = document.getElementById("mobile-menu");
-            var asideNav = document.getElementById("aside-nav");
+    <script src="script.js"></script>
+</body>
 
-            function popUp() {
-                asideNav.classList.remove("d-hide");
-            }
-
-            menuIcon.addEventListener("click", popUp);
-
-            var cancelIcon = document.getElementById("cancel-icon");
-
-            function hideNav() {
-                asideNav.classList.add("d-hide");
-            }
-            
-            cancelIcon.addEventListener("click", hideNav);
-
-
-
-
-
-            // recipe search here       // recipe search here       // recipe search here
-
-            (function () {
-            const searchInput = document.getElementById('search-box');
-            const cards = Array.from(document.querySelectorAll('.trendy-recipe'));
-            const noResults = document.getElementById('noResults');
-
-            // Helper: normalize text for comparison
-            function norm(text) {
-                return (text || '').trim().toLowerCase();
-            }
-
-            function filterRecipes() {
-                const q = norm(searchInput.value);
-                let visibleCount = 0;
-
-                cards.forEach(card => {
-                const titleEl = card.querySelector('.recipe-title');
-                const descEl = card.querySelector('.recipe-desc');
-                const title = norm(titleEl && titleEl.textContent);
-                const desc = norm(descEl && descEl.textContent);
-
-                // match either title OR description
-                const isMatch = q === '' || title.includes(q) || desc.includes(q);
-
-                if (isMatch) {
-                    // restore default display (so grid/flex layout stays intact)
-                    card.style.display = '';
-                    visibleCount++;
-                } else {
-                    // hide non-matching
-                    card.style.display = 'none';
-                }
-                });
-
-                // show or hide the no-results message
-                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-            }
-
-            // Listen to input (updates as the user types)
-            searchInput.addEventListener('input', filterRecipes);
-
-            // Optional: support Enter to focus first visible card (small UX boost)
-            searchInput.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                e.preventDefault();
-                const firstVisible = cards.find(c => c.style.display !== 'none');
-                if (firstVisible) firstVisible.querySelector('h6').focus();
-                }
-            });
-
-            // Initial run (in case input has a prefilled value)
-            filterRecipes();
-            })();
-        </script>
-
-    </body>
 </html>

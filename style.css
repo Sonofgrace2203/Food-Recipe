@@ -554,7 +554,7 @@ sup {
 
 .recipe-trendy {
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1029,7 +1029,7 @@ footer {
 /* aside nav is here */
 aside {
     position: absolute;
-    top: 20rem;
+    top: 10rem;
     right: 5rem;
     background-color: var(--footer);
     border-radius: 1rem;
@@ -1165,5 +1165,15 @@ ol {
 }
 
 .descr-project {
-    margin-top: 2rem;
+    margin-top: 4rem;
+}
+
+.ui-prototype {
+    display: flex;
+    justify-content: center;
+}
+
+#ui-prototype {
+    width: 80%;
+    height: 50%;
 }

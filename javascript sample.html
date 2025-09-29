@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Search Demo</title>
+  <style>
+    :root {
+      --gap: 1rem;
+      --card-radius: 10px;
+      --card-bg: #fff;
+      --page-bg: #f6f7fb;
+      --accent: #ff6f3c;
+      --max-width: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--page-bg);
+      color: #111;
+      line-height: 1.4;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 28px auto;
+      padding: 0 16px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    /* Search input */
+    .search-wrap {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    #searchInput {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      background: white;
+      outline: none;
+    }
+    #searchInput:focus { box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+
+    /* Recipes grid */
+    .recipes-grid {
+      display: grid;
+      gap: var(--gap);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 12px;
+    }
+
+    .recipe-card {
+      background: var(--card-bg);
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(12,20,30,0.06);
+      display: block; /* letting grid place it */
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .recipe-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(12,20,30,0.08); }
+
+    .recipe-media {
+      /* placeholder "image" area */
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      background: linear-gradient(135deg,#ffe6da,#ffd1b3);
+      color: #6b2b00;
+    }
+
+    .recipe-body {
+      padding: 12px;
+    }
+    .recipe-title {
+      margin: 0 0 6px 0;
+      font-size: 1.05rem;
+    }
+    .recipe-desc {
+      margin: 0;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .no-results {
+      display: none;
+      margin-top: 18px;
+      padding: 14px;
+      text-align: center;
+      background: #fff3f0;
+      border: 1px solid #ffd6c6;
+      border-radius: 8px;
+      color: #6b2b00;
+    }
+
+    /* small helpers */
+    .hint { font-size: 0.9rem; color: #666; }
+
+    @media (max-width: 420px) {
+      .recipe-media { height: 110px; font-size: 34px; }
+      h1 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Food Recipe — Search Demo</h1>
+      <div class="search-wrap" role="search" aria-label="Search recipes">
+        <input id="searchInput" type="search" placeholder="Type to search recipes by title or description..." aria-label="Search recipes">
+        <div class="hint" aria-hidden="true">Matches title or description</div>
+      </div>
+    </header>
+
+    <!-- Recipes grid -->
+    <section class="recipes-grid" id="recipesGrid" aria-live="polite">
+      <!-- Example recipe cards -->
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🍗</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Chicken Fajita</h3>
+          <p class="recipe-desc">Tender chicken strips with peppers, onion, and smoky spices.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🍕</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Cheese Pizza</h3>
+          <p class="recipe-desc">Classic Italian style pizza with bubbling mozzarella and basil.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🍰</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Chocolate Cake</h3>
+          <p class="recipe-desc">Rich and moist chocolate cake with chocolate frosting.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🌮</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Veggie Tacos</h3>
+          <p class="recipe-desc">Colorful tacos filled with seasoned beans, avocado, and salsa.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🥗</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Caesar Salad</h3>
+          <p class="recipe-desc">Crisp romaine with tangy dressing and crunchy croutons.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media" aria-hidden="true">🍜</div>
+        <div class="recipe-body">
+          <h3 class="recipe-title">Noodle Stir Fry</h3>
+          <p class="recipe-desc">Quick stir-fried noodles with veggies and savory sauce.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="no-results" id="noResults" role="status">No recipes match your search.</div>
+  </div>
+
+  <script>
+    (function () {
+      const searchInput = document.getElementById('searchInput');
+      const cards = Array.from(document.querySelectorAll('.recipe-card'));
+      const noResults = document.getElementById('noResults');
+
+      // Helper: normalize text for comparison
+      function norm(text) {
+        return (text || '').trim().toLowerCase();
+      }
+
+      function filterRecipes() {
+        const q = norm(searchInput.value);
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const titleEl = card.querySelector('.recipe-title');
+          const descEl = card.querySelector('.recipe-desc');
+          const title = norm(titleEl && titleEl.textContent);
+          const desc = norm(descEl && descEl.textContent);
+
+          // match either title OR description
+          const isMatch = q === '' || title.includes(q) || desc.includes(q);
+
+          if (isMatch) {
+            // restore default display (so grid/flex layout stays intact)
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            // hide non-matching
+            card.style.display = 'none';
+          }
+        });
+
+        // show or hide the no-results message
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      // Listen to input (updates as the user types)
+      searchInput.addEventListener('input', filterRecipes);
+
+      // Optional: support Enter to focus first visible card (small UX boost)
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          const firstVisible = cards.find(c => c.style.display !== 'none');
+          if (firstVisible) firstVisible.querySelector('h3').focus();
+        }
+      });
+
+      // Initial run (in case input has a prefilled value)
+      filterRecipes();
+    })();
+  </script>
+</body>
+</html>

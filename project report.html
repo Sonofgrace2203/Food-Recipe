@@ -1,151 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NaijaKitchen - Nigerian Food Recipes</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
-        <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaKitchen - Nigerian Food Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
+    <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="script.js">
+</head>
+
+<body>
+    <div>
+        <!-- this is the header -->
         <div>
-            <!-- this is the header -->
-              <div>
-                <header>
-                    <div>
-                        <h1>NijaKitchen</h1>
-                        <p id="p" style="color: black;">Nigerian Food Recipes</p>
-                    </div>
-                    <nav>  
-                        <ul>
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="food.html"><li>Food</li></a>
-                            <a href="recipe.html"><li>Recipe</li></a>
-                            <a href="project report.html"><li>Project Report</li></a>
-                            <li>
-                                <select name="" id="">
-                                    <option value="Recipe">Ingredients</option>
-                                    <option value="Recipe">Flavour</option>
-                                </select>
-                            </li>
-                        </ul>
-                        <span>
-                            <button>Subscribe</button>
-                        </span>
-                        </nav>
+            <header>
+                <div>
+                    <h1>NijaKitchen</h1>
+                    <p id="p" style="color: black;">Nigerian Food Recipes</p>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="food.html">
+                            <li>Food</li>
+                        </a>
+                        <a href="recipe.html">
+                            <li>Recipe</li>
+                        </a>
+                        <a href="project report.html">
+                            <li>Project Report</li>
+                        </a>
+                        <li>
+                            <select name="" id="">
+                                <option value="Recipe">Ingredients</option>
+                                <option value="Recipe">Flavour</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <span>
+                        <button>Subscribe</button>
+                    </span>
+                </nav>
 
-                    <div id="mobile-menu" class="mobile-menu">
-                        <i class="mdi mdi-menu"></i>
-                    </div>
-                </header>
-
-                <!-- this is the main food list page -->
-                <main class="main">
-
-                    <section>
-                        <div class="report-section">
-                           <div class="section-ttle-icon">
-                                <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
-                            </div>
-                            <h3>Project Report <b>Food Recipe Webpage</b></h3>
-                            <div id="report-container">
-                                <div class="report-head">
-                                    <h6 class="report-title">NijaKitchen - Nigerian Food Recipes</h6>
-                                    </div>
-                                </div>
-                                <div class="report-details">
-                                    <h6 class="recipe-title">Developers</h6>
-                                    <sub class="report-desc">Mustapha Olabode</sub>
-                                    <sub class="report-desc">Taiye Ogunleye</sub>
-                                </div>
-                                <div class="report-details">
-                                    <h6 id="sub-report-title">Abstract</h6>
-                                    <label id="sub-report">This project presents the development of a <b>Food Recipe Webpage</b> designed as a frontend web development practice under the CWW Tech Africa program. The webpage showcases multiple recipes using a clean, responsive layout and provides a search functionality that allows users to filter recipes by title or description. The project was carried out collaboratively by two trainees, with the aim of strengthening practical skills in <b>HTML, CSS, JavaScript, and GitHub Pages deployment</b>.</label>
-                                    <label id="sub-report" style="margin-top: 0.1rem;">The outcome is a functional and responsive recipe website featuring a navigation bar, recipe cards, a dynamic search system, and a project report page. This project not only demonstrates technical proficiency in frontend development but also highlights teamwork, problem-solving, and effective project execution.</label>
-                                </div>
-                                <div class="report-details">
-                                    <h6 id="sub-report-title">Introduction</h6>
-                                    <label id="sub-report">This project is a simple yet functional <b>Food Recipe Webpage</b> designed as part of our training with <b>CWW Tech Africa. The primary goal was to practice "frontend web development skills."" </b>  by building a responsive webpage that displays different food recipes, incorporates a search functionality, and provides an engaging user interface. </label>
-                                    <label id="sub-report" style="margin-top: 0.1rem;">The project replicates a recipe template but was customized to demonstrate our understanding of <b>HTML, CSS, and JavaScript.</b></label>
-                                </div>
-                                <div class="report-details">
-                                    <h6 id="sub-report-title">Introduction</h6>
-                                    <label id="sub-report">The key objectives of the project were: </label>
-                                    <ol>
-                                        <li>To design and structure a webpage using<b>HTML5</b></li>
-                                        <li>To style the webpage and make it responsive using (Flexbox/Grid).  <b>CSS3</b></li>
-                                        <li>To implement <b>JavaScript functionality</b> for recipe search/filtering. </li>
-                                        <li>To practice teamwork and version control with GitHub Pages for hosting. </li>
-                                    </ol>
-                                </div>
-                                <div class="report-details details2">
-                                    <h6 id="sub-report-title">Tools and Technologies Used </h6>
-                                    <label id="sub-report"><b>HTML5:</b> for structuring the webpage. </label>
-                                    <label id="sub-report"><b>CSS3:</b> for styling, layout, and responsiveness. </label>
-                                    <label id="sub-report"><b>JavaScript:</b> for dynamic search/filter functionality. </label>
-                                    <label id="sub-report"><b>VS  Code:</b> as the code editor. </label>
-                                    <label id="sub-report"><b>GitHub:</b> for hosting and deployment. </label>
-                                </div>
-                                <div class="report-details details2">
-                                    <h6 id="sub-report-title">Project Description </h6>
-                                    <label id="sub-report">The Food Recipe Webpage is structured into several main sections:  </label>
-                                    <ol>
-                                        <label id="sub-report">Header & Navigation Bar </label>
-                                        <li><b>Home:</b> Returns the user to the homepage.</li>
-                                        <li><b>Food:</b> Displays a page containing a collection of different meals.</li>
-                                        <li><b>Recipe:</b> Shows a page listing several food recipes along with their ingredients.</li>
-                                        <li><b>Project Report</b> Provides detailed information about the project, the developers, and the CWW Tech Africa program.</li>
-                                    </ol>
-                                    <div class="descr-project">
-                                        <ol>
-                                            <b> Hero Section / Search Bar </b>
-                                            <label id="sub-report">A top section with a search input field where users can search for recipes by title or description. </label>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- this is the footer section -->
-                    <footer>
-                    <div class="footer">
-                        <div class="footer-title-wrapper">
-                            <b id="b-footer">NijaKitchen</b>
-                            <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern twists, 
-                                made to inspire your kitchen every day.
-                            </h4>
-                            <div class="footer-icon">
-                                <i id="footer-icon" class="mdi mdi-facebook"></i>
-                                <i id="footer-icon" class="mdi mdi-linkedin"></i>
-                                <i id="footer-icon" class="mdi mdi-twitter"></i>
-                                <i id="footer-icon" class="mdi mdi-instagram"></i>
-                            </div>
-                        </div>
-
-                        <div class="f-nav">
-                            <nav class="footer-nav">
-                                <ul>
-                                    <a class="ul-footer" href="index.html"><li>Recipes</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Cooking Tips</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Local Delights</li></a>
-                                    <a class="ul-footer" href="index.html"><li>Shop Ingredients</li></a>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer-copyright">
-                            <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
-                            <div class="terms-policy-footer">
-                                <a class="ul-footer" href="index.html">Terms & Conditions</a>
-                                <a class="ul-footer" href="index.html">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                </main>
+                <div id="mobile-menu" class="mobile-menu">
+                    <i class="mdi mdi-menu"></i>
+                </div>
 
                 <aside id="aside-nav" class="d-hide">
                     <nav class="aside-nav">
@@ -153,10 +58,18 @@
                             <i class="mdi mdi-cancel" id="aside-nav-cancel"></i>
                         </div>
                         <ul class="aside-ul">
-                            <a href="index.html" id="aside-a"><li>Home</li></a>
-                            <a href="food.html" id="aside-a"><li>Food</li></a>
-                            <a href="recipe.html" id="aside-a"><li>Recipe</li></a>
-                            <a href="project report.html" id="aside-a"><li>Project Report</li></a>
+                            <a href="index.html" id="aside-a">
+                                <li>Home</li>
+                            </a>
+                            <a href="food.html" id="aside-a">
+                                <li>Food</li>
+                            </a>
+                            <a href="recipe.html" id="aside-a">
+                                <li>Recipe</li>
+                            </a>
+                            <a href="project report.html" id="aside-a">
+                                <li>Project Report</li>
+                            </a>
                             <li>
                                 <select name="" id="" id="aside-a" class="select-aside">
                                     <option value="Recipe">Ingredients</option>
@@ -174,87 +87,221 @@
                             <i id="aside-icon" class="mdi mdi-instagram"></i>
                         </div>
                     </nav>
-               </aside>
+                </aside>
+            </header>
+
+            <!-- this is the main food list page -->
+            <main class="main">
+
+                <section>
+                    <div class="report-section">
+                        <div class="section-ttle-icon">
+                            <strong class="mdi mdi-arrow-collapse-horizontal"></strong>
+                        </div>
+                        <h3>Project Report <b>Food Recipe Webpage</b></h3>
+                        <div id="report-container">
+                            <div class="report-head">
+                                <h6 class="report-title">NijaKitchen - Nigerian Food Recipes</h6>
+                            </div>
+                        </div>
+                        <div class="report-details">
+                            <h6 class="recipe-title">Developers</h6>
+                            <sub class="report-desc">Mustapha Olabode</sub>
+                            <sub class="report-desc">Taiye Ogunleye</sub>
+                        </div>
+                        <div class="report-details">
+                            <h6 id="sub-report-title">Abstract</h6>
+                            <label id="sub-report">This project presents the development of a <b>Food Recipe Webpage</b>
+                                designed as a frontend web development practice under the CWW Tech Africa program. The
+                                webpage showcases multiple recipes using a clean, responsive layout and provides a
+                                search functionality that allows users to filter recipes by title or description. The
+                                project was carried out collaboratively by two trainees, with the aim of strengthening
+                                practical skills in <b>HTML, CSS, JavaScript, and GitHub Pages deployment</b>.</label>
+                            <label id="sub-report" style="margin-top: 0.1rem;">The outcome is a functional and
+                                responsive recipe website featuring a navigation bar, recipe cards, a dynamic search
+                                system, and a project report page. This project not only demonstrates technical
+                                proficiency in frontend development but also highlights teamwork, problem-solving, and
+                                effective project execution.</label>
+                        </div>
+                        <div class="report-details">
+                            <h6 id="sub-report-title">Introduction</h6>
+                            <label id="sub-report">This project is a simple yet functional <b>Food Recipe Webpage</b>
+                                designed as part of our training with <b>CWW Tech Africa</b>. The primary goal was to
+                                practice <b>frontend web development skills." </b> by building a responsive webpage that
+                                displays different food recipes, incorporates a search functionality, and provides an
+                                engaging user interface. </label>
+                            <label id="sub-report" style="margin-top: 0.1rem;">The project replicates a recipe template
+                                but was customized to demonstrate our understanding of <b>HTML, CSS, and
+                                    JavaScript.</b></label>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Tools and Technologies Used </h6>
+                            <label id="sub-report"><b>HTML5:</b> for structuring the webpage. </label>
+                            <label id="sub-report"><b>CSS3:</b> for styling, layout, and responsiveness. </label>
+                            <label id="sub-report"><b>JavaScript:</b> for dynamic search/filter functionality. </label>
+                            <label id="sub-report"><b>VS Code:</b> as the code editor. </label>
+                            <label id="sub-report"><b>GitHub:</b> for hosting and deployment. </label>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Project Description </h6>
+                            <label id="sub-report">The Food Recipe Webpage is structured into several main sections:
+                            </label>
+                            <ol>
+                                <label id="sub-report">Header & Navigation Bar </label>
+                                <li><b>Home:</b> Returns the user to the homepage.</li>
+                                <li><b>Food:</b> Displays a page containing a collection of different meals.</li>
+                                <li><b>Recipe:</b> Shows a page listing several food recipes along with their
+                                    ingredients.</li>
+                                <li><b>Project Report</b> Provides detailed information about the project, the
+                                    developers, and the CWW Tech Africa program.</li>
+                            </ol>
+                            <div class="descr-project">
+                                <ol>
+                                    <b> Hero Section / Search Bar </b>
+                                    <label id="sub-report">A top section with a search input field where users can
+                                        search for recipes by title or description. </label>
+                                </ol>
+                            </div>
+                            <div class="descr-project">
+                                <ol>
+                                    <b> Recipe Section </b>
+                                    <label id="sub-report"> Displays a collection of recipe cards, each containing:
+                                    </label>
+                                </ol>
+                                <ol>
+                                    <label id="sub-report"></label>
+                                    <li> An image or icon of the dish.</li>
+                                    <li> The title of the recipe.</li>
+                                    <li> A ingredient description of the meal. </li>
+                                    <li> Cards are arranged in a flex layout for responsiveness.</li>
+                                </ol>
+                            </div>
+                            <div class="descr-project">
+                                <ol>
+                                    <b> Search Functionality </b>
+                                    <label id="sub-report">Implemented with JavaScript to dynamically filter recipes
+                                        based on keywords typed into the search bar. </label>
+                                </ol>
+                            </div>
+                            <div class="descr-project">
+                                <ol>
+                                    <b> Responsive Design </b>
+                                    <label id="sub-report"> The page layout automatically adjusts to desktop, tablet,
+                                        and mobile screen sizes. </label>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">UI Prototype</h6>
+                            <label id="sub-report">Below is the user interface (UI) prototype that guided the
+                                development of the Food Recipe Webpage: </label>
+                            <div class="ui-prototype">
+                                <img id="ui-prototype" src="images/ui.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Features Implemented</h6>
+                            <ol>
+                                <li><b>Header Navigation:</b> Links to Home, Food, Recipe, and Project Report pages.
+                                </li>
+                                <li><b>Responsive Layout:</b> The page adapts to different screen sizes. </li>
+                                <li><b>Recipe Cards:</b> Each recipe has an image/icon, a title, and a short
+                                    description.</li>
+                                <li><b>Search Bar:</b> Users can filter recipes in real-time based on input keywords.
+                                </li>
+                                <li><b>Clean UI:</b> Use of colors, spacing, and hover effects for better user
+                                    experience. </li>
+                                <li><b>Hosting on GitHub Pages:</b> Accessible live via [Food Recipe Webpage] <a
+                                        href="index.html" target="_blank"><b>"https://sonofgrace2203.github.io/Food-Recipe".</b></a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Challenges Faced</h6>
+                            <ol>
+                                <li>Ensuring the webpage remained responsive across all screen sizes.</li>
+                                <li>Implementing the search functionality to work with both titles and descriptions.
+                                </li>
+                                <li>Managing GitHub deployment and resolving CSS file path issues. </li>
+                            </ol>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Lessons Learned</h6>
+                            <ol>
+                                <li>How to structure a webpage semantically with HTML</li>
+                                <li>The importance of <b>CSS responsiveness</b> using grid and flexbox.</li>
+                                <li>How to implement <b>DOM manipulation</b> in JavaScript. </li>
+                                <li>Team collaboration and version control with GitHub.</li>
+                            </ol>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Conclusion</h6>
+                            <label id="sub-report">This Food Recipe Webpage project was a successful practice in
+                                <b>frontend web development</b>. It helped us strengthen our skills in HTML, CSS, and
+                                JavaScript while also gaining experience in teamwork and deployment. The project serves
+                                as a foundation for more advanced web applications we plan to build. </label>
+                        </div>
+                        <div class="report-details details2">
+                            <h6 id="sub-report-title">Developers</h6>
+                            <label id="sub-report"> <b>Mustapha Olabode</b> – Frontend Developer, CWW Tech Africa
+                                Trainee </label>
+                            <label id="sub-report"> <b>Temitope Ogunleye</b> – Frontend Developer, CWW Tech Africa
+                                Trainee </label>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- this is the footer section -->
+    <footer>
+        <div class="footer">
+            <div class="footer-title-wrapper">
+                <b id="b-footer">NijaKitchen</b>
+                <h4 id="h4-footer">Bringing you the taste of Nigeria — from classic recipes to modern twists,
+                    made to inspire your kitchen every day.
+                </h4>
+                <div class="footer-icon">
+                    <i id="footer-icon" class="mdi mdi-facebook"></i>
+                    <i id="footer-icon" class="mdi mdi-linkedin"></i>
+                    <i id="footer-icon" class="mdi mdi-twitter"></i>
+                    <i id="footer-icon" class="mdi mdi-instagram"></i>
+                </div>
+            </div>
+
+            <div class="f-nav">
+                <nav class="footer-nav">
+                    <ul>
+                        <a class="ul-footer" href="index.html">
+                            <li>Recipes</li>
+                        </a>
+                        <a class="ul-footer" href="index.html">
+                            <li>Cooking Tips</li>
+                        </a>
+                        <a class="ul-footer" href="index.html">
+                            <li>Local Delights</li>
+                        </a>
+                        <a class="ul-footer" href="index.html">
+                            <li>Shop Ingredients</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-copyright">
+                <h4 id="h4-footer">&copy; 2025 NijaKitchen. All Rights Reserved.</h4>
+                <div class="terms-policy-footer">
+                    <a class="ul-footer" href="index.html">Terms & Conditions</a>
+                    <a class="ul-footer" href="index.html">Privacy Policy</a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <script>
-            var menuIcon = document.getElementById("mobile-menu");
-            var asideNav = document.getElementById("aside-nav");
+    </main>
+    </div>
+    </div>
 
-            function popUp() {
-                asideNav.classList.remove("d-hide");
-            }
+    <script src="script.js"></script>
+</body>
 
-            menuIcon.addEventListener("click", popUp);
-
-            var cancelIcon = document.getElementById("cancel-icon");
-
-            function hideNav() {
-                asideNav.classList.add("d-hide");
-            }
-            
-            cancelIcon.addEventListener("click", hideNav);
-
-
-
-
-
-            // recipe search here       // recipe search here       // recipe search here
-
-            (function () {
-            const searchInput = document.getElementById('search-box');
-            const cards = Array.from(document.querySelectorAll('.trendy-recipe'));
-            const noResults = document.getElementById('noResults');
-
-            // Helper: normalize text for comparison
-            function norm(text) {
-                return (text || '').trim().toLowerCase();
-            }
-
-            function filterRecipes() {
-                const q = norm(searchInput.value);
-                let visibleCount = 0;
-
-                cards.forEach(card => {
-                const titleEl = card.querySelector('.recipe-title');
-                const descEl = card.querySelector('.recipe-desc');
-                const title = norm(titleEl && titleEl.textContent);
-                const desc = norm(descEl && descEl.textContent);
-
-                // match either title OR description
-                const isMatch = q === '' || title.includes(q) || desc.includes(q);
-
-                if (isMatch) {
-                    // restore default display (so grid/flex layout stays intact)
-                    card.style.display = '';
-                    visibleCount++;
-                } else {
-                    // hide non-matching
-                    card.style.display = 'none';
-                }
-                });
-
-                // show or hide the no-results message
-                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-            }
-
-            // Listen to input (updates as the user types)
-            searchInput.addEventListener('input', filterRecipes);
-
-            // Optional: support Enter to focus first visible card (small UX boost)
-            searchInput.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                e.preventDefault();
-                const firstVisible = cards.find(c => c.style.display !== 'none');
-                if (firstVisible) firstVisible.querySelector('h6').focus();
-                }
-            });
-
-            // Initial run (in case input has a prefilled value)
-            filterRecipes();
-            })();
-        </script>
-
-    </body>
 </html>
