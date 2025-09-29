@@ -1177,3 +1177,11 @@ ol {
     width: 80%;
     height: 50%;
 }
+
+.no-results {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: var(--shadow);
+    font-size: 3rem;
+    border-radius: 3rem;
+}
