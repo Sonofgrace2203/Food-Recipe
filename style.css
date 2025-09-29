@@ -455,6 +455,7 @@ b {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s;
 }
 
 .recipe-shop:hover {
@@ -465,6 +466,7 @@ b {
     border: 3px solid var(--primary-color);
     border-radius: 2rem;
     padding: 2rem;
+    transform: scale(1.2);
 }
 
 .recipe-img {
@@ -552,7 +554,7 @@ sup {
 
 .recipe-trendy {
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1106,4 +1108,62 @@ aside {
     margin-top: 2rem;
     border: 3px solid var(--primary-color);
     padding: 1rem 3rem;
+}
+
+/* this is the project report section */
+.report-section {
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2.5rem;
+    /* background-image: linear-gradient( 
+            rgb(255, 255, 255, 0.9), 
+            rgb(255, 255, 255, 0.9)), 
+            url(images/download.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    margin-bottom: 7rem;
+}
+
+#report-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.report-head {
+    margin-top: 2rem;
+}
+
+.report-details {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.details2 {
+    margin-top: 2rem;
+}
+
+#sub-report-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#sub-report {
+    font-size: 1.8rem;
+    color: var(--neutral-color);
+    font-weight: 100;
+    padding: 0rem 3rem;
+    margin-top: -2rem;
+}
+
+ol {
+    margin: -2rem 5rem;
+    font-size: 1.8rem;
+}
+
+.descr-project {
+    margin-top: 2rem;
 }
